@@ -24,8 +24,8 @@ import kotlin.text.get
 class NetworkConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
-            apply(plugin = "dp.android.library")
-            apply(plugin = "dp.hilt")
+            apply(plugin = "com.dh.alex.module.library")
+            apply(plugin = "com.dh.alex.module.hilt")
             apply(plugin = "org.jetbrains.kotlin.plugin.serialization")
 
             dependencies {
@@ -37,6 +37,7 @@ class NetworkConventionPlugin : Plugin<Project> {
                 "implementation"(libs.findLibrary("ktor.client.logging").get())
                 "implementation"(libs.findLibrary("ktor.client.content.negotiation").get())
                 "implementation"(libs.findLibrary("ktor.client.serialization").get())
+                "implementation"(libs.findLibrary("kotlinx.serialization.json").get())
             }
         }
     }

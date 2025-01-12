@@ -1,4 +1,6 @@
 [versions]
+# Arrow (Functional Programming)
+arrow = "2.0.0"
 androidDesugarJdkLibs = "2.1.4"
 androidGradlePlugin = "8.8.0"
 androidTools = "31.8.0"
@@ -23,6 +25,8 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 
 [libraries]
+arrow = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow" }
+arrow-fx = { group = "io.arrow-kt", name = "arrow-fx-coroutines", version.ref = "arrow" }
 android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

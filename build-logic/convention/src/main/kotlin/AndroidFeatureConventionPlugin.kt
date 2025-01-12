@@ -24,8 +24,8 @@ import kotlin.text.get
 class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
-            apply(plugin = "dp.android.library")
-            apply(plugin = "dp.hilt")
+            apply(plugin = "com.dh.alex.module.library")
+            apply(plugin = "com.dh.alex.module.hilt")
             apply(plugin = "org.jetbrains.kotlin.plugin.serialization")
 
             dependencies {
