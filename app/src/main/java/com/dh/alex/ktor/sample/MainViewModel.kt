@@ -21,6 +21,7 @@ internal class MainViewModel @Inject constructor(
                     },
                     { response ->
                         // handle success
+                        println("response: $response")
                     }
                 )
         }
