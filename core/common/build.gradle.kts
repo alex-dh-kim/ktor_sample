@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "com.dh.alex.module.common"
 }
+
+dependencies {
+    implementation(libs.arrow)
+}
