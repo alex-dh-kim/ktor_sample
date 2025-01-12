@@ -51,7 +51,6 @@ internal object NetworkProvidesModule {
                 }
                 headers {
                     append(HttpHeaders.ContentType, "application/json")
-                    append(HttpHeaders.Authorization, NetworkConstants.GITHUB_API_KEY)
                 }
             }
             install(HttpTimeout) {
